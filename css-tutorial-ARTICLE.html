@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Styling Your First Web Page with CSS | 404Found</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="no-sidebar is-preload">
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <section id="header">
+                <!-- Logo -->
+                <h1><a style="border-bottom: 4px rgba(71, 71, 71, 0.315) solid; padding: 15px;" href="index.html"><img src="images/check-solid.svg" alt="Font Awesome Icon" style="height: 48px; margin-right: 10px; margin-bottom: -7px;"><span style="color: #337bff;">404</span>Found</a></h1>
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="latest.html">Latest</a></li>
+                        <li class="current"><a href="Web-dev.html">Web development</a></li>
+                        <li><a href="learning.html">Learning to code</a></li>
+                        <li><a href="article.html">AI & Machine Learning</a></li>
+                        <li><a href="article.html">Tutorials</a></li>
+                        <li><a href="article.html">Tech News</a></li>
+                        <li><a href="article.html">Frameworks</a></li>
+                        <li><a href="article.html">APIs</a></li>
+                        <li><a href="article.html">Languages</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <!-- Main -->
+            <section id="main">
+                <div class="container">
+
+                    <!-- Content -->
+                    <article class="box post">
+                        <header>
+                            <h2>Styling Your First Web Page with CSS</h2><br>
+                            <h2 class="text-box">Difficulty: <span style="color: rgb(47, 255, 123);">Easy</span></h2>
+                            <h1>Posted: Jan 13th, 2025 | By the 404Found Team</h1><br>
+                        </header>
+
+                        <p>In this tutorial, we'll learn how to use CSS (Cascading Style Sheets) to add color, fonts, and layout styles to your HTML page. CSS is used to make web pages look more appealing by adding styling to the elements created with HTML.</p><br>
+
+                        <h2>What You’ll Learn:</h2><br>
+                        <ul>
+                            <li>How to link a CSS file to your HTML page.</li>
+                            <li>How to apply styles to different HTML elements.</li>
+                            <li>How to use basic CSS properties such as color, padding, margin, and font styles.</li>
+                        </ul><br>
+
+                        <h2>Step 1: Setting Up Your CSS File</h2><br>
+                        <p>To begin, you’ll need to create a CSS file. Open your text editor and create a new file. Save it as <code>style.css</code>.</p><br>
+
+                        <h2>Step 2: Linking the CSS File to Your HTML</h2><br>
+                        <p>To apply the styles, link the CSS file to your HTML document. You can do this by adding the following <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> section of your HTML file:</p><br>
+
+                        <div class="code-container">
+                            <div class="code-header">HTML Example</div>
+                            <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+                        </div><br>
+
+                        <h2>Step 3: Adding Styles in the CSS File</h2><br>
+                        <p>Now, open the <code>style.css</code> file you created and add some simple styles to your page. For example, to change the background color, text color, and font size, you can add the following CSS code:</p><br>
+
+                        <div class="code-container">
+                            <div class="code-header">CSS Example</div>
+                            <pre><code>body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #0073e6;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}</code></pre>
+                        </div><br>
+
+                        <p>In the example above, we set a light gray background color for the page, changed the text color to dark gray, and made the main heading <code>&lt;h1&gt;</code> blue and centered it.</p><br>
+
+                        <h2>Step 4: Viewing Your Styled Web Page</h2><br>
+                        <p>After saving the <code>style.css</code> file, return to your HTML page. Make sure the <code>&lt;link&gt;</code> tag is correctly added in the <code>&lt;head&gt;</code> section. Now, refresh the page in your web browser, and you should see the styles applied to your web page.</p><br>
+
+                        <h2>Step 5: More Styling Examples</h2><br>
+                        <p>Here are a few more styling examples you can try:</p><br>
+
+                        <div class="code-container">
+                            <div class="code-header">CSS Example</div>
+                            <pre><code>p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}</code></pre>
+                        </div><br>
+
+                        <p>In this example, we’ve added a font size and line height to paragraphs (<code>&lt;p&gt;</code>), styled links (<code>&lt;a&gt;</code>) with a blue color and no underline, and added an effect for when the link is hovered over.</p><br>
+
+                        <h2>Step 6: Full Example</h2><br>
+                        <p>Here’s a full example of how your HTML and CSS might look together:</p><br>
+
+                        <div class="code-container">
+                            <div class="code-header">HTML Example</div>
+                            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Styled Web Page&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Styled Web Page!&lt;/h1&gt;
+    &lt;p&gt;This page has been styled using CSS to make it more visually appealing.&lt;/p&gt;
+    &lt;a href="https://www.example.com" target="_blank"&gt;Visit Example&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        </div><br>
+
+                        <div class="code-container">
+                            <div class="code-header">CSS Example</div>
+                            <pre><code>body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #0073e6;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}</code></pre>
+                        </div><br>
+
+                        <h2>Step 7: Next Steps</h2><br>
+                        <p>Now that you've styled your first web page, here are some things to try next:</p><br>
+                        <ul>
+                            <li>Experiment with different CSS properties like margins, padding, and borders.</li>
+                            <li>Learn about CSS selectors and how to target specific elements.</li>
+                            <li>Explore CSS frameworks like Bootstrap to make styling easier and faster.</li>
+                        </ul><br>
+
+                        <p>Happy styling!</p><br>
+
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <section id="footer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-4 col-6-medium col-12-small">
+                            <section>
+                                <h2>Explore more articles</h2>
+                                <ul class="divided">
+                                    <li><a href="article.html">Latest</a></li>
+                                    <li><a href="article.html">Web development</a></li>
+                                    <li><a href="article.html">Learning to code</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <section>
+                                <ul class="divided">
+                                    <li><a href="article.html">AI & Machine Learning</a></li>
+                                    <li><a href="article.html">Tutorials</a></li>
+                                    <li><a href="article.html">Tech News</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <section>
+                                <ul class="divided">
+                                    <li><a href="article.html">Frameworks</a></li>
+                                    <li><a href="article.html">APIs</a></li>
+                                    <li><a href="article.html">Languages</a></li>
+                                </ul>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </body>
+</html>

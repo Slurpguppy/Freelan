@@ -2907,3 +2907,38 @@ input, select, textarea {
 			}
 
 	}
+
+/* code-container */
+	.code-container {
+		background-color: #282c34;
+		border-radius: 8px;
+		padding: 15px;
+		margin: 20px 0;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		overflow-x: auto;
+	  }
+	  .code-container pre {
+		margin: 0;
+		font-family: "Courier New", Courier, monospace;
+		font-size: 1rem;
+		color: #ffffff;
+	  }
+	  .code-container code {
+		color: #61dafb;
+	  }
+	  .code-header {
+		background-color: #21252b;
+		color: #e5e5e5;
+		padding: 10px 15px;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		font-weight: bold;
+	  }
+/* difficulty */
+	  .text-box {
+		padding: 10px;          
+		display: inline-block;   
+		background: #252122;   
+		color: #e5e5e5;
+		border-radius: 5px;
+	  }
