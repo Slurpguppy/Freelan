@@ -62,3 +62,21 @@
 				});
 
 })(jQuery);
+// popup form
+document.addEventListener("DOMContentLoaded", function() {
+	const form = document.getElementById('subscribeForm');
+    const onload = document.getElementById("onload");
+    const closeonload = document.getElementById("closeonload");
+    const openonload = document.getElementById("openonload");
+    onload.style.display = "flex";
+    closeonload.addEventListener("click", function() {
+        onload.style.display = "none";
+    });
+	form.addEventListener('submit', (event) => {
+        // Allow form submission
+        setTimeout(() => {
+            form.reset(); // Clear the form after submission
+        }, 50); // Slight delay to ensure formspree processes the submission
+    });
+});
+    
