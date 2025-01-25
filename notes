@@ -1,0 +1,19 @@
+<!-- Main -->
+<section id="main">
+  <form style="width: 80%; margin: auto; display: block; text-align: center;"
+action="https://formspree.io/f/mwppzvjo"
+method="POST"
+>
+<label style="display: block; margin-bottom: 10px; width: 50%; margin: auto; display: block;">
+Your email:
+<input placeholder="Email" type="email" name="email" style="display: block; margin: 5px auto;">
+</label>
+<label style="display: block; margin-bottom: 10px;">
+Your message:
+<textarea placeholder="Enter message" name="message" style="display: block; margin: 5px auto; width: 50%; margin: auto; display: block;""></textarea>
+</label>
+<!-- your other form fields go here -->
+<button type="submit" style="display: block; margin: 10px auto;">Send</button>
+</form>
+
+</section>
